@@ -44,7 +44,7 @@ int InversePairsCore(vector<int> data,vector<int>& copy,int start,int end){
     while (i>=start && j>=start+length+1) {
         if (data[i] > data[j]) {
             copy[indexCopy--] = data[i--];
-            count += j - start - length;
+            count += j - start - length;//整段计数
         }
         else copy[indexCopy--] = data[j--];
     }
@@ -57,7 +57,7 @@ int InversePairsCore(vector<int> data,vector<int>& copy,int start,int end){
     return left+right+count;
 }
 
-int main_testInversePair(){
+int main_testInversePairs(){
     vector<int> nums = {7,5,6,4};
     int res;
     res = InversePairs(nums, 4);
@@ -65,7 +65,7 @@ int main_testInversePair(){
     return 0;
 }
 
-// 20200424腾讯后台笔试题：逆序对之序列反转
+// 20200424腾讯后台笔试题：逆序对之序列反转 -------------------------
 void reverse_array(vector<int>& array, int len, int interval){
     if (len <= 0) {
         return;

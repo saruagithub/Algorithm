@@ -10,8 +10,9 @@
 		790BD8761EB43BFC00D28CE2 /* Ants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790BD8751EB43BFC00D28CE2 /* Ants.cpp */; };
 		790BD8781EB4411500D28CE2 /* drawLots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790BD8771EB4411500D28CE2 /* drawLots.cpp */; };
 		790F71FF2446B716001137E8 /* 5_1TreeNode_Travel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790F71FE2446B716001137E8 /* 5_1TreeNode_Travel.cpp */; };
-		790F72022451BE9E001137E8 /* 8tecent_compress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790F72002451BE9D001137E8 /* 8tecent_compress.cpp */; };
+		790F72022451BE9E001137E8 /* 8tecent_test1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790F72002451BE9D001137E8 /* 8tecent_test1.cpp */; };
 		790F720424527C59001137E8 /* 5_1Reversed_pair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790F720324527C59001137E8 /* 5_1Reversed_pair.cpp */; };
+		790F720624548370001137E8 /* 5_2Reversed_pair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790F720524548370001137E8 /* 5_2Reversed_pair.cpp */; };
 		7910362B221D94260073FD37 /* 4greedy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7910362A221D94260073FD37 /* 4greedy.cpp */; };
 		791727901EE98A3100B8719F /* SetHeap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7917278F1EE98A3100B8719F /* SetHeap.cpp */; };
 		791798252277D11B0024F39A /* 4_2fence_repair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 791798242277D11B0024F39A /* 4_2fence_repair.cpp */; };
@@ -107,8 +108,9 @@
 		790BD8751EB43BFC00D28CE2 /* Ants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ants.cpp; sourceTree = "<group>"; };
 		790BD8771EB4411500D28CE2 /* drawLots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = drawLots.cpp; sourceTree = "<group>"; };
 		790F71FE2446B716001137E8 /* 5_1TreeNode_Travel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5_1TreeNode_Travel.cpp; sourceTree = "<group>"; };
-		790F72002451BE9D001137E8 /* 8tecent_compress.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 8tecent_compress.cpp; sourceTree = "<group>"; };
+		790F72002451BE9D001137E8 /* 8tecent_test1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 8tecent_test1.cpp; sourceTree = "<group>"; };
 		790F720324527C59001137E8 /* 5_1Reversed_pair.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5_1Reversed_pair.cpp; sourceTree = "<group>"; };
+		790F720524548370001137E8 /* 5_2Reversed_pair.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5_2Reversed_pair.cpp; sourceTree = "<group>"; };
 		7910362A221D94260073FD37 /* 4greedy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 4greedy.cpp; sourceTree = "<group>"; };
 		7917278F1EE98A3100B8719F /* SetHeap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SetHeap.cpp; sourceTree = "<group>"; };
 		791798242277D11B0024F39A /* 4_2fence_repair.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 4_2fence_repair.cpp; sourceTree = "<group>"; };
@@ -340,7 +342,7 @@
 				7969AD3B242DA63500D3B704 /* 5poster_zhaohang.cpp */,
 				7969AD3D242E1D8F00D3B704 /* 6socks_test.cpp */,
 				7969AD3F2430D7B700D3B704 /* 7wood.cpp */,
-				790F72002451BE9D001137E8 /* 8tecent_compress.cpp */,
+				790F72002451BE9D001137E8 /* 8tecent_test1.cpp */,
 			);
 			path = Interview_problem;
 			sourceTree = "<group>";
@@ -363,6 +365,7 @@
 				796FD07B23B894C9008156A5 /* 4StackAndQueue.cpp */,
 				796FD07D23B89506008156A5 /* 5Sort&Find.cpp */,
 				790F720324527C59001137E8 /* 5_1Reversed_pair.cpp */,
+				790F720524548370001137E8 /* 5_2Reversed_pair.cpp */,
 				796FD07F23B8C5E8008156A5 /* 6BackTrack.cpp */,
 				796FD08123B8D802008156A5 /* 7printN.cpp */,
 			);
@@ -453,7 +456,7 @@
 				79A45F6322DD674A00BAE3B4 /* 6_0heap.cpp in Sources */,
 				79B87F4E23B4A94800EF79C4 /* 4_4linkList_sortlist.cpp in Sources */,
 				7925F33A1EEFEDD900A66D7D /* BinarySearchTree.cpp in Sources */,
-				790F72022451BE9E001137E8 /* 8tecent_compress.cpp in Sources */,
+				790F72022451BE9E001137E8 /* 8tecent_test1.cpp in Sources */,
 				79F70F4B1ECD9AD1004DCCBA /* coins.cpp in Sources */,
 				796FD08423BB7D41008156A5 /* 2KthBigValue.cpp in Sources */,
 				79DDD0AA23A5E660007473F8 /* 4ListNode_basic.cpp in Sources */,
@@ -509,6 +512,7 @@
 				79AB41C91F27802800BF8172 /* Graph1.cpp in Sources */,
 				7946FC211EC740DB0000377B /* maze.cpp in Sources */,
 				790F71FF2446B716001137E8 /* 5_1TreeNode_Travel.cpp in Sources */,
+				790F720624548370001137E8 /* 5_2Reversed_pair.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

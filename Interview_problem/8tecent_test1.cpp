@@ -1,5 +1,5 @@
 //
-//  8tecent_compress.cpp
+//  8tecent_test1.cpp
 //  Algorithm
 //
 //  Created by wangxue on 2020/4/23.
@@ -14,7 +14,7 @@
 #include <math.h>
 using namespace std;
 
-//解压缩字符串
+//题目1 解压缩字符串
 void unzip_str(string str){
     stack<int> index_stk;
     for (int i=0; i<str.size(); i++) {
@@ -54,7 +54,7 @@ int main_testUnzip(){
     return 0;
 }
 
-// --------- second 暴力？？？
+// 题目2： 前后看高楼，second 暴力？？？
 void Building_see(int* matrix,int len){
     int *res = new int[len];
     for (int i=0;i<len;i++){
@@ -95,7 +95,29 @@ int main_testBulidingSee(){
 }
 
 
-//Vacation
+int Building_see_official() {
+    vector<int> a, b;
+    stack<int> st1, st2;
+    int n, x[100001];
+    cin >> n;
+    for (int i = 0; i < n; i++) cin >> x[i];
+      
+    for (int i = 0, j = n - 1; i < n, j >= 0; i++, j--) {
+        a.push_back(st1.size());
+        b.push_back(st2.size());
+        while (!st1.empty() && st1.top() <= x[i]) st1.pop(); //always Monotonic stack
+        while (!st2.empty() && st2.top() <= x[j]) st2.pop(); //always Monotonic stack
+        st1.push(x[i]);
+        st2.push(x[j]);
+    }
+    reverse(b.begin(), b.end());
+    for (int i = 0; i < n; i++) cout << b[i] + a[i] + 1<< " "; //add 1 himself
+    return 0;
+}
+// 题目3 见swot_offer的5_1Reversed_pair
+
+
+// 题目4 Vacation，不连续工作或锻炼2天
 int main_vacation(){
     int n;
     cin>>n;
@@ -170,7 +192,7 @@ int main_vacation(){
  print(dp.count(-1))
  */
 
-//视野争夺：贪心算法的区间覆盖问题
+//题目5：视野争夺：贪心算法的区间覆盖问题
 //首字母排序 a > b,true
 bool cmp(vector<int> a, vector<int> b)
 {
@@ -178,6 +200,7 @@ bool cmp(vector<int> a, vector<int> b)
     else if (a[0]==b[0] && a[1]<b[1]) return true;
     else return false;
 }
+
 //参考 https://www.cnblogs.com/Draymonder/p/7215230.html
 int slove_cover(vector<vector<int>>& array,int len, int cover_len){
     if (array[0][0] > 0 || array[len-1][1]<cover_len) {
@@ -204,8 +227,7 @@ int slove_cover(vector<vector<int>>& array,int len, int cover_len){
     return count;
 }
 
-
-int main(){
+int main_test_cover(){
     int n,L;
     cin>>n>>L;
     vector<vector<int>> array(n,vector<int>(2,0));
@@ -218,4 +240,5 @@ int main(){
     int res;
     res = slove_cover(array,n,L);
     cout<<res;
+    return 0;
 }
